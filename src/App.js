@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
+import { UserAuthContextProvider } from "./context/UserAuthContext";
 import "./App.css";
 import Home from "./components/Home";
 import Login from "./components/Login";
@@ -10,14 +11,16 @@ function App() {
     <Container style={{ width: "400px" }}>
       <Row>
         <Col>
-          <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
+          <UserAuthContextProvider>
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+            </Routes>
+          </UserAuthContextProvider>
         </Col>
-      </Row>
-    </Container>
+      </Row >
+    </Container >
   );
 }
 
