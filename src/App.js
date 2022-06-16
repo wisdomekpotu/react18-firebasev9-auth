@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
-import { UserAuthContextProvider } from "./context/UserAuthContext";
+import { UserAuthContextProvider } from "./context/userAuthContext";
 import "./App.css";
 import Home from "./components/Home";
 import Login from "./components/Login";
