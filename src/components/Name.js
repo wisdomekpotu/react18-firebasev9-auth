@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {collection, getDocs, addDoc} from "firebase/firestore";
 import {db} from "../firebase-config";
+import {userCollectionRef} from "../firestore_collection";
 import EditUser from "./EditUser";
 
 
@@ -18,7 +19,7 @@ const Name = () => {
 	}, [users])
 
 	const getUsers = () => {
-		const userCollectionRef = collection(db, 'users');
+		// const userCollectionRef = collection(db, 'users');
 		getDocs(userCollectionRef).then(response => {
 			const user = response.docs.map(doc => ({
 				data: doc.data(),
@@ -38,8 +39,9 @@ const Name = () => {
 		if (userName === '') {
 			return
 		}
-		const userCollectionRef = collection(db, 'users');
-		addDoc(userCollectionRef, {userName}).then(response => {
+		// const userCollectionRef = collection(db, 'users');
+		addDoc(userCollectionRef, {userName})
+			.then(response => {
 			console.log(response)
 		}).catch(error => console.log(error.message))
 	}
