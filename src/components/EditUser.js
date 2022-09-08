@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { db } from "../firebase-config";
-import { doc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc, setDoc } from "firebase/firestore";
 
 
 const EditUser = () => {
@@ -17,7 +17,12 @@ const EditUser = () => {
 			.then(response => {
 				console.log(response)
 			}).catch(error => console.log(error.message))
+		// setDoc(docRef, {age: 86})
+		// 	.then(response => {
+		// 		console.log(response)
+		// 	}).catch(error => console.log(error.message))
 	}
+
 	return (
 		<div>
 			<h4>Edit user</h4>

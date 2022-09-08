@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="- updated DB">
+    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="- added updation name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EditUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Name.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firestore_collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firestore_collection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,7 @@
       <workItem from="1662565144432" duration="2122000" />
       <workItem from="1662620709170" duration="1957000" />
       <workItem from="1662622693811" duration="1105000" />
-      <workItem from="1662631015928" duration="7951000" />
+      <workItem from="1662631015928" duration="9139000" />
     </task>
     <task id="LOCAL-00001" summary="added birthday, gender &amp; name components">
       <created>1662622156911</created>
@@ -163,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662636977572</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- added updation name">
+      <created>1662640047635</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662640047635</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +193,7 @@
     <MESSAGE value="- alert username from input" />
     <MESSAGE value="- adding username to DB" />
     <MESSAGE value="- updated DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updated DB" />
+    <MESSAGE value="- added updation name" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added updation name" />
   </component>
 </project>
