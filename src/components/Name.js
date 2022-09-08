@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
-import {collection, getDocs} from "firebase/firestore";
+import {collection, getDocs, addDoc} from "firebase/firestore";
 import {db} from "../firebase-config";
 
 
@@ -37,6 +37,10 @@ const Name = () => {
 		if (userName === '') {
 			return
 		}
+		const userCollRef = collection(db, 'users');
+		addDoc(userCollRef, {userName}).then(response => {
+			console.log(response)
+		}).catch(error => console.log(error.message))
 		alert(userName);
 	}
 

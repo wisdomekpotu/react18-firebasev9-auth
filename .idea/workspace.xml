@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="- clear pr">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="- alert username from input">
       <change beforePath="$PROJECT_DIR$/src/components/Name.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Name.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <workItem from="1662565144432" duration="2122000" />
       <workItem from="1662620709170" duration="1957000" />
       <workItem from="1662622693811" duration="1105000" />
-      <workItem from="1662631015928" duration="2970000" />
+      <workItem from="1662631015928" duration="3289000" />
     </task>
     <task id="LOCAL-00001" summary="added birthday, gender &amp; name components">
       <created>1662622156911</created>
@@ -140,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662632955897</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- alert username from input">
+      <created>1662634111165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662634111165</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +168,7 @@
     <MESSAGE value="added firebase deploying" />
     <MESSAGE value="- added import getFirestore 2nd db into firebase-config.js" />
     <MESSAGE value="- clear pr" />
-    <option name="LAST_COMMIT_MESSAGE" value="- clear pr" />
+    <MESSAGE value="- alert username from input" />
+    <option name="LAST_COMMIT_MESSAGE" value="- alert username from input" />
   </component>
 </project>
