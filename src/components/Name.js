@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {collection, getDocs, addDoc} from "firebase/firestore";
 import {db} from "../firebase-config";
+import EditUser from "./EditUser";
 
 
 const Name = () => {
@@ -19,11 +20,11 @@ const Name = () => {
 	const getUsers = () => {
 		const userCollectionRef = collection(db, 'users');
 		getDocs(userCollectionRef).then(response => {
-			const usrs = response.docs.map(doc => ({
+			const user = response.docs.map(doc => ({
 				data: doc.data(),
 				id: doc.id,
 			}))
-			setUsers(usrs)
+			setUsers(user)
 		}).catch(error => console.log(error.message))
 	}
 
@@ -37,11 +38,10 @@ const Name = () => {
 		if (userName === '') {
 			return
 		}
-		const userCollRef = collection(db, 'users');
-		addDoc(userCollRef, {userName}).then(response => {
+		const userCollectionRef = collection(db, 'users');
+		addDoc(userCollectionRef, {userName}).then(response => {
 			console.log(response)
 		}).catch(error => console.log(error.message))
-		alert(userName);
 	}
 
 	return (
@@ -53,7 +53,7 @@ const Name = () => {
 				<button onClick={handleClick}>NEXT</button>
 				<ul>
 					{users.map(user =>
-						<li key={user.id}>{user.data.name}</li>
+						<li key={user.id}>{user.id}:{user.data.userName}</li>
 					)}
 				</ul>
 				<button onClick={() => getUsers()}>REFRESH USERS</button>
@@ -68,6 +68,7 @@ const Name = () => {
 				/>
 				<button type='submit'>ADD USER</button>
 			</form>
+			<EditUser/>
 		</div>
 	)
 }
