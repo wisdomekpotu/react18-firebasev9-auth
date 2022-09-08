@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="added birthday, gender &amp; name components">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="added firebase deploying" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +47,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,8 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -99,7 +97,7 @@
       <workItem from="1662550446606" duration="403000" />
       <workItem from="1662565144432" duration="2122000" />
       <workItem from="1662620709170" duration="1957000" />
-      <workItem from="1662622693811" duration="775000" />
+      <workItem from="1662622693811" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="added birthday, gender &amp; name components">
       <created>1662622156911</created>
@@ -115,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662622768182</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added firebase deploying">
+      <created>1662623791317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662623791317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added birthday, gender &amp; name components" />
-    <option name="LAST_COMMIT_MESSAGE" value="added birthday, gender &amp; name components" />
+    <MESSAGE value="added firebase deploying" />
+    <option name="LAST_COMMIT_MESSAGE" value="added firebase deploying" />
   </component>
 </project>
