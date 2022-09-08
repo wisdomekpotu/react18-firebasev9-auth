@@ -32,14 +32,39 @@ const Name = () => {
 		navigate("/home");
 	}
 
-	return (
-		<label>
-			<input value={userName}
-				   onChange={(event) => setUserName(event.target.value)}
-			/>
-			<button onClick={handleClick}>NEXT</button>
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		if (userName === '') {
+			return
+		}
+		alert(userName);
+	}
 
-		</label>
+	return (
+		<div>
+			<label>
+				<input value={userName}
+					   onChange={(event) => setUserName(event.target.value)}
+				/>
+				<button onClick={handleClick}>NEXT</button>
+				<ul>
+					{users.map(user =>
+						<li key={user.id}>{user.data.name}</li>
+					)}
+				</ul>
+				<button onClick={() => getUsers()}>REFRESH USERS</button>
+			</label>
+			<h4>Add user</h4>
+			<form onSubmit={handleSubmit}>
+				<label htmlFor='name'>user name</label>
+				<input id='name'
+					   type='text'
+					   value={userName}
+					   onChange={(e) => setUserName(e.target.value)}
+				/>
+				<button type='submit'>ADD USER</button>
+			</form>
+		</div>
 	)
 }
 
