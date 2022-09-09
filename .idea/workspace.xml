@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="- added updation name">
+    <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="- added updation age">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Birthday.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Birthday.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Name.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Name.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/userAuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/userAuthContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

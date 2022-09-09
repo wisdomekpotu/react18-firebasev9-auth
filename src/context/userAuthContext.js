@@ -9,6 +9,7 @@ import {
 } from "firebase/auth";
 
 import { auth } from "../firebase-config";
+import {updateDoc} from "firebase/firestore";
 
 const userAuthContext = createContext();
 
@@ -21,6 +22,10 @@ export function UserAuthContextProvider({ children }) {
   function signUp(email, password) {
     return createUserWithEmailAndPassword(auth, email, password);
   }
+  function setAge(auth, userAge) {
+    return updateDoc(auth, userAge);
+  }
+
   function logOut() {
     return signOut(auth);
   }
