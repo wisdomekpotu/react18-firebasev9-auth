@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="966966c0-9ace-4770-90e8-6575bd067826" name="Changes" comment="- added updation age">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Birthday.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Birthday.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Name.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/userAuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/userAuthContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +104,7 @@
       <workItem from="1662620709170" duration="1957000" />
       <workItem from="1662622693811" duration="1105000" />
       <workItem from="1662631015928" duration="9139000" />
+      <workItem from="1662889933970" duration="1990000" />
     </task>
     <task id="LOCAL-00001" summary="added birthday, gender &amp; name components">
       <created>1662622156911</created>
