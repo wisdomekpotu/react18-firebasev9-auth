@@ -5,9 +5,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Gender from "./components/Gender";
-import Birthday from "./components/Birthday";
-import Name from "./components/Name";
+import UserDetails from "./components/UserDetails";
 
 function App() {
   return (
@@ -19,9 +17,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="/gender" element={<Gender/>}/>
-              <Route path="/birthday" element={<Birthday/>}/>
-              <Route path="/name" element={<Name/>}/>
+              <Route path="/details" element={<UserDetails/>}/>
             </Routes>
           </UserAuthContextProvider>
         </Col>
