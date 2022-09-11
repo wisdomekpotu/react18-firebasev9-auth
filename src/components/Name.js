@@ -2,16 +2,12 @@ import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {addDoc} from "firebase/firestore";
 import {userCollectionRef} from "../firestore_collection";
-import Birthday from "./Birthday";
-import Home from "./Home";
-import Gender from "./Gender";
 
 
 const Name = () => {
 	const navigate = useNavigate();
 	const [userName, setUserName] = useState('');
 	const [userAge, setUserAge] = useState('');
-	const [toggle, setToggle] = useState(false);
 	const [userGender, setUserGender] = useState('male');
 	const saveUserName =  (e) => {
 		e.preventDefault();
@@ -34,41 +30,6 @@ const Name = () => {
 				console.log(response);
 				navigate("/home");
 			}).catch(error => console.log(error.message))
-	}
-	const shovHide = () => {
-		let a = document.getElementById('name')
-		let b = document.getElementById('age')
-		let c = document.getElementById('btn')
-		let d = document.getElementById('show')
-		let g = document.getElementById('gender')
-		// d.style.display = 'none';
-		// g.style.display = 'none';
-		if (a.style.display === 'none') {
-			a.style.display = 'block'
-		} else if (a.style.display === 'block') {
-			a.style.display = 'none'
-		}
-		if (b.style.display === 'none') {
-			b.style.display = 'block'
-		} else if (b.style.display === 'block') {
-			b.style.display = 'none'
-		}
-		if (c.style.display === 'none') {
-			c.style.display = 'block'
-		} else if (c.style.display === 'block') {
-			c.style.display = 'none'
-		}
-		if (d.style.display === 'none') {
-			d.style.display = 'block'
-		} else if (c.style.display === 'block') {
-			d.style.display = 'none'
-		}
-		if (g.style.display === 'none') {
-			g.style.display = 'block'
-		} else if (c.style.display === 'block') {
-			g.style.display = 'none'
-		}
-
 	}
 	const hide1 = () => {
 		let d1 = document.getElementById('1');
@@ -115,12 +76,26 @@ const Name = () => {
 				<button onClick={hide2}>2</button>
 			</div>
 			<div id='3'style={{display: 'none'}}>
-				<input type='text'
-					   id='gender'
+				<p>{userGender}</p>
+				{/*<input type='text'*/}
+				{/*	   id='gender'*/}
+				{/*	   style={{display: 'block'}}*/}
+				{/*	   placeholder='gender'*/}
+				{/*	   value={userGender}*/}
+				{/*	   onChange={(e) => setUserGender(e.target.value)}*/}
+				{/*/>*/}
+				<input type='radio'
 					   style={{display: 'block'}}
-					   placeholder='gender'
-					   value={userGender}
-					   onChange={(e) => setUserGender(e.target.value)}
+					   value='male'
+					   checked={userGender === 'male' ? true : false}
+					   onChange={(event) => setUserGender(event.target.value)}
+				/>
+
+				<input type='radio'
+					   style={{display: 'block'}}
+					   value='female'
+					   checked={userGender === 'female' ? true : false}
+					   onChange={(event) => setUserGender(event.target.value)}
 				/>
 				<button
 					onClick={saveUserAge}
